@@ -1,4 +1,5 @@
 KO3CMD
 ======
 
-Command ilne code generator for Kohana 3.2
+KO3CMD is a command line php script that automates creating kohana3 classes (model/controllers etc)
+
