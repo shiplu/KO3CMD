@@ -3,7 +3,7 @@
 // Command class
 class ko3_command{
     public function help(){
-        Log::info("Provides help/usage about ".__CLASS__." command");
+        Log::info("Provides help/usage about ".substr(get_called_class(), 4)." command");
     } 
     public function run($params = array()){
         if(count($params)<1){

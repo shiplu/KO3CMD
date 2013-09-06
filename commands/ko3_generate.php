@@ -1,6 +1,10 @@
 <?php
 // generator
 class ko3_generate extends ko3_command{
+    public function help(){
+        Log::info("Available commands:");
+        Log::info("ormmodel MODELNAME DATABASE_TABLE_NAME [PRIMARY_KEY_COL_NAME]:");
+    } 
 	public function ormmodel($name, $tblname, $pk = 'id'){
 		$name = strtolower($name);
 		$name = ucfirst($name);
